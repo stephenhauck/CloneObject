@@ -1,5 +1,5 @@
 # CloneObject
-How to clone objects in C# easily .. been using it for years 
+How to clone objects in C# easily .. been using it for years, works on complex objects as well
 
 Newtonsoft is awesome ... here is how I copy objects when necessary
 
@@ -10,7 +10,14 @@ Newtonsoft is awesome ... here is how I copy objects when necessary
                 Location = "New York",
                 Qualification = "Awesome at anything!",
                 Age = 21,
-                SomeIrrelevantProperty = "No used in ProfileDTO"
+                SomeIrrelevantProperty = "No used in ProfileDTO",
+                ProfileAddrress = new Addrress()
+                {
+                    HouseApartmentNumber = "12",
+                    StreetName = "Main Street",
+                    CityName = "San Diego",
+                    PostalCode = "12111"
+                }
             };
 
             // Copy it over to an instance of ProfileDTO
@@ -21,10 +28,10 @@ Newtonsoft is awesome ... here is how I copy objects when necessary
 
 
 //profile object instance
-{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"SomeIrrelevantProperty":"No used in ProfileDTO"}
+{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"SomeIrrelevantProperty":"No used in ProfileDTO","ProfileAddrress":{"HouseApartmentNumber":"12","StreetName":"Main Street","CityName":"San Diego","PostalCode":"12111"}}
 
 //profileDTO object instance, notice the irrelevant field is dropped 
-{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21}
+{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"ProfileAddrress":{"HouseApartmentNumber":"12","StreetName":"Main Street","CityName":"San Diego","PostalCode":"12111"}}
 
 //profileCopy object instance
-{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"SomeIrrelevantProperty":"No used in ProfileDTO"}
+{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"SomeIrrelevantProperty":"No used in ProfileDTO","ProfileAddrress":{"HouseApartmentNumber":"12","StreetName":"Main Street","CityName":"San Diego","PostalCode":"12111"}}
