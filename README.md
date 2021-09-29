@@ -43,6 +43,7 @@ Newtonsoft is awesome ... here is how I copy objects when necessary
         }
     }
 ]
+
 //profileDTO object instance, notice the irrelevant field is dropped 
 [
     {
