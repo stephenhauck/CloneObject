@@ -15,7 +15,14 @@ namespace CloneObject
                 Location = "New York",
                 Qualification = "Awesome at anything!",
                 Age = 21,
-                SomeIrrelevantProperty = "No used in ProfileDTO"
+                SomeIrrelevantProperty = "No used in ProfileDTO",
+                ProfileAddrress = new Addrress()
+                {
+                    HouseApartmentNumber = "12",
+                    StreetName = "Main Street",
+                    CityName = "San Diego",
+                    PostalCode = "12111"
+                }
             };
 
             // Copy it over to an instance of ProfileDTO
@@ -39,6 +46,16 @@ namespace CloneObject
         public string Qualification { get; set; }
         public int Age { get; set; }
         public string SomeIrrelevantProperty { get; set; }
+        public Addrress ProfileAddrress { get; set; }
+    }
+
+
+    public class Addrress
+    {
+        public string HouseApartmentNumber { get; set; }
+        public string StreetName { get; set; }
+        public string CityName { get; set; }
+        public string PostalCode { get; set; }
     }
 
     public class ProfileDTO
@@ -47,6 +64,7 @@ namespace CloneObject
         public string Location { get; set; }
         public string Qualification { get; set; }
         public int Age { get; set; }
+        public Addrress ProfileAddrress { get; set; }
     }
 
     public class ProfileCopy 
@@ -56,5 +74,6 @@ namespace CloneObject
         public string Qualification { get; set; }
         public int Age { get; set; }
         public string SomeIrrelevantProperty { get; set; }
+        public Addrress ProfileAddrress { get; set; }
     }
 }
