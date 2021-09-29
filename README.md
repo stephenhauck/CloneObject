@@ -28,10 +28,50 @@ Newtonsoft is awesome ... here is how I copy objects when necessary
 
 
 //profile object instance
-{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"SomeIrrelevantProperty":"No used in ProfileDTO","ProfileAddrress":{"HouseApartmentNumber":"12","StreetName":"Main Street","CityName":"San Diego","PostalCode":"12111"}}
-
+[
+    {
+        "FullName": "Jonathan Smith",
+        "Location": "New York",
+        "Qualification": "Awesome at anything!",
+        "Age": 21,
+        "SomeIrrelevantProperty": "No used in ProfileDTO",
+        "ProfileAddrress": {
+            "HouseApartmentNumber": "12",
+            "StreetName": "Main Street",
+            "CityName": "San Diego",
+            "PostalCode": "12111"
+        }
+    }
+]
 //profileDTO object instance, notice the irrelevant field is dropped 
-{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"ProfileAddrress":{"HouseApartmentNumber":"12","StreetName":"Main Street","CityName":"San Diego","PostalCode":"12111"}}
+[
+    {
+        "FullName": "Jonathan Smith",
+        "Location": "New York",
+        "Qualification": "Awesome at anything!",
+        "Age": 21,
+        "ProfileAddrress": {
+            "HouseApartmentNumber": "12",
+            "StreetName": "Main Street",
+            "CityName": "San Diego",
+            "PostalCode": "12111"
+        }
+    }
+]
 
 //profileCopy object instance
-{"FullName":"Jonathan Smith","Location":"New York","Qualification":"Awesome at anything!","Age":21,"SomeIrrelevantProperty":"No used in ProfileDTO","ProfileAddrress":{"HouseApartmentNumber":"12","StreetName":"Main Street","CityName":"San Diego","PostalCode":"12111"}}
+[
+    {
+        "FullName": "Jonathan Smith",
+        "Location": "New York",
+        "Qualification": "Awesome at anything!",
+        "Age": 21,
+        "SomeIrrelevantProperty": "No used in ProfileDTO",
+        "ProfileAddrress": {
+            "HouseApartmentNumber": "12",
+            "StreetName": "Main Street",
+            "CityName": "San Diego",
+            "PostalCode": "12111"
+        }
+    }
+]
