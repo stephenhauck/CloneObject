@@ -1,5 +1,6 @@
 # CloneObject
 How to clone objects in C# easily .. been using it for years, works on complex objects as well
+Also shows how to clone objects having different names with annotations.
 
 Newtonsoft is awesome ... here is how I copy objects when necessary
 
