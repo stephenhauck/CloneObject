@@ -60,11 +60,13 @@ namespace CloneObject
 
     public class ProfileDTO
     {
-        public string FullName { get; set; }
+        [JsonProperty("FullName")] //Will take the property named "FullName" when deserializing and put the data in this element
+        public string FullName_NOMATCH { get; set; }
         public string Location { get; set; }
         public string Qualification { get; set; }
         public int Age { get; set; }
-        public Addrress ProfileAddrress { get; set; }
+        [JsonProperty("ProfileAddrress")] //Property mapping
+        public Addrress ProfileAddrress_NOMATCH { get; set; }
     }
 
     public class ProfileCopy 
